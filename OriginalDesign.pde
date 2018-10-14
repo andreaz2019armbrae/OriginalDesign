@@ -28,7 +28,6 @@ void draw()
     } 
     if (y < -55) {  
       y = 55;
-      c=20;
     } 
   }
   rect(rx, ry, 33, 33);
