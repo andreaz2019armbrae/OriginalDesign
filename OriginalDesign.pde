@@ -24,11 +24,11 @@ void draw()
   for (int i = 15; i < height; i += 5) {
     if (y > 55) {  
       y = 0;
-      c=0;
+      c= 20;
     } 
-    if (i >15) {  
+    if (y < -55) {  
       y = 55;
-      c = 20;
+      c = 0;
     } 
   }
   rect(rx, ry, 33, 33);
