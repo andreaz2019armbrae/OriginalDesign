@@ -1,18 +1,35 @@
-int h = 75;
-int l =175;
-int x = (400-h)/2;
-int y = (400-l)/2;
+int y = 55;
+int c = 20;
 
 void setup()
 {
   size (400,400);
-  fill(100,100,100);
-  rect(x,y,h,l,15);
+  frameRate(5);
+  background(470);
 }
 
 void draw()
 {
-  l = l - 1;
-  y = y + 1;
-  rect(x,y,h,l,0,0,15,15);
+  float r = random(0,255);
+  float g = random(0,255);
+  float b = random(0,255);
+  float rx = random(0,400);
+  float ry = random(0,400);
+  ellipse(200, 200, 150, y);
+  y = y - 10;
+  fill(r,g,b);
+  ellipse(200, 200, c,c);
+  c = c-4;
+  fill(255,255,255);
+  for (int i = 15; i < height; i += 5) {
+    if (i < 0) {  
+      y = 0;
+      c=0;
+    } 
+    if (y < -55) {  
+      y = 55;
+      c=20;
+    } 
+  }
+  rect(rx, ry, 33, 33);
 }
