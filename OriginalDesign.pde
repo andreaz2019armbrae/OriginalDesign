@@ -19,8 +19,9 @@ void draw()
   y = y - 10;
   fill(r,g,b);
   ellipse(200, 200, c,c);
-  c = c - 4;
-  if (y > 55) {  
+  c = c-4;
+  fill(255,255,255);
+    if (y > 55) {  
       y = 0;
       c=0;
     } 
@@ -30,3 +31,4 @@ void draw()
     } 
   rect(rx, ry, 33, 33);
 }
+
