@@ -22,7 +22,7 @@ void draw()
   c = c-4;
   fill(255,255,255);
   for (int i = 15; i < height; i += 5) {
-    if (y > 55) {  
+    if (i < 0) {  
       y = 0;
       c= 20;
     } 
