@@ -1,5 +1,5 @@
 int y = 55;
-int c = 20;
+int z = 20;
 
 void setup()
 {
