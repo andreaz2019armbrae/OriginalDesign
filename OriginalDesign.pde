@@ -19,6 +19,7 @@ void draw()
   y = y - 10;
   fill(r,g,b);
   ellipse(200, 200, z,z);
+  z = z-4;
   fill(255,255,255);
   for (int i = 15; i < height; i += 5) {
     if (i < 0) {  
@@ -30,7 +31,6 @@ void draw()
       z = 20;
     } 
   }
-  z = z-4;
   rect(rx, ry, 33, 33);
 }
 
