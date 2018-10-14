@@ -21,7 +21,9 @@ void draw()
   fill(0);
   ellipse(200, 200, 150, y);
   y = y - 10;
-  fill(255,255,255);
+  fill(r,g,b);
+  ellipse(200, 200, z,z);
+  z = z-4;
   for (int i = 15; i < height; i += 5) {
     if (i < 0) {  
       z = 0;
