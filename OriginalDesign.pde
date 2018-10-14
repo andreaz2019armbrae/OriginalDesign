@@ -24,7 +24,8 @@ void draw()
   for (int i = 15; i < height; i += 5) {
     if (i < 0) {  
       y = 0;
-      c= 0;
+      c = 0;
+      ellipse(200, 200, c,c);
     } 
     if (y < -55) {  
       y = 55;
