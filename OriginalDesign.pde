@@ -18,7 +18,7 @@ void draw()
   fill(r,g,b);
   ellipse(200, 200, z,z);
   z = z-4;
-  fill(0);
+  fill(250,250,250);
   ellipse(200, 200, 150, y);
   y = y - 10;
   fill(r,g,b);
