@@ -15,15 +15,12 @@ void draw()
   float b = random(0,255);
   float rx = random(0,400);
   float ry = random(0,400);
-  fill(r,g,b);
-  ellipse(200, 200, z,z);
-  z = z-4;
-  fill(250,250,250);
   ellipse(200, 200, 150, y);
   y = y - 10;
   fill(r,g,b);
   ellipse(200, 200, z,z);
   z = z-4;
+  fill(255,255,255);
   for (int i = 15; i < height; i += 5) {
     if (i < 0) {  
       z = 0;
@@ -36,4 +33,3 @@ void draw()
   }
   rect(rx, ry, 33, 33);
 }
-
