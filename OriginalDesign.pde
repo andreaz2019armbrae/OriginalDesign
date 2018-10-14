@@ -21,6 +21,7 @@ void draw()
   ellipse(200, 200, c,c);
   c = c-4;
   fill(255,255,255);
+  for (int i = 15; i < height; i += 5) {
     if (y > 55) {  
       y = 0;
       c=0;
@@ -29,6 +30,7 @@ void draw()
       y = 55;
       c=20;
     } 
+  }
   rect(rx, ry, 33, 33);
 }
 
