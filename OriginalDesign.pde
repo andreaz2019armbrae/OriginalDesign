@@ -16,20 +16,14 @@ void draw()
   float rx = random(0,400);
   float ry = random(0,400);
   ellipse(200, 200, 150, y);
-  y = y - 10;
   fill(r,g,b);
   ellipse(200, 200, z,z);
+  y = y - 10;
   z = z-4;
   fill(255,255,255);
-  for (int i = 15; i < height; i += 5) {
-    if (i < 0) {  
-      z = 0;
-      y = 0;
-    } 
-    if (y < -55) {  
-      y = 55;
-      z = 20;
-    } 
-  }
+  if (y < -55) {  
+    y = 55;
+    z = 20;
+  } 
   rect(rx, ry, 33, 33);
 }
