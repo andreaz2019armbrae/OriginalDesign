@@ -1,5 +1,5 @@
 int y = 55;
-int z = 20;
+float z = 20;
 
 void setup()
 {
@@ -10,22 +10,7 @@ void setup()
 
 void draw()
 {
-   float r = random(0,255);
-   float g = random(0,255);
-   float b = random(0,255);
-  
-   ellipse(200, 200, 150, y);
-   fill(r,g,b);
-   ellipse(200, 200, z,z);
-   fill(255,255,255);
-   
-   z = z - 4;
-   y = y - 10;
-   
-   if (y < -55) {  
-    y = 55;
-    z = 20;
-   }   
+  eye();
   decoration(400);
 }
 
@@ -37,7 +22,26 @@ void mouseClicked() {
 void decoration(int y) {
   float rx = random(0,y);
   float ry = random(0,y);
-  
-  line(200, 200, mouseX, mouseY);
+ 
   rect(rx, ry, 33, 33);
+}
+
+void eye(){
+   float r = random(0,255);
+   float g = random(0,255);
+   float b = random(0,255);
+  
+   fill(255,255,255);
+   ellipse(200, 200, 150, y);
+   fill(r,g,b);
+   ellipse(200, 200, z,z);
+   fill(255,255,255);
+   
+   z = z - 4;
+   y = y - 10;
+   
+   if (y < -55) {  
+    y = 55;
+    z = 20;
+   }  
 }
