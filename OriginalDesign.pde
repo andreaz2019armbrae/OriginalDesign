@@ -32,7 +32,7 @@ void eye(){
    float b = random(0,255);
   
    fill(255,255,255);
-   //ellipse(200, 200, 150, y);
+   ellipse(200, 200, 150, y);
    fill(r,g,b);
    ellipse(200, 200, z,z);
    fill(255,255,255);
